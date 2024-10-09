@@ -137,3 +137,23 @@ header {
     color: white;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.719);
 }
+
+.secao3__container{
+    width: 80%;
+    margin: auto;
+    
+}
+
+.secao3__lista{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+
+}
+
+
+
+.secao3__lista__itens{
+    background-color: #F5F5F5;
+    padding: 1em;
+}
