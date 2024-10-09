@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+
+.baloo-2 {
+    font-family: "Baloo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.montserrat{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:weight;
+    font-style: normal;
+  }
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+header {
+    background-color: #F5F5F5;
+    display:flex;
+    padding: 20px;
+    justify-content: space-between;   
+    align-items: center; 
+}
+
+
+
+.cabecalho__menu{
+    display: flex;
+    gap: 2em;
+    align-items: center;  
+
+}
+
+
+#logo_meato{
+    width: 80px;
+    border-radius: 2em;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.479); 
+}
+
+
+.cabecalho__menu__logo{
+    width: 30px;
+    height: 40px;
+}
+
+
+.cabecalho__login{
+    padding-right: 2em;
+    background-color: #ffc20f;
+    padding: 0.5em;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.479);
+}
+
+.link__login{
+    padding: 0.5em;
+    color: white;
+    font-family: "Baloo 2";
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+
+.secao1__container{
+    width: 100vw;
+    height: 30vh;
+    background-image: url(img/fundo_comidas.jpg);
+    background-size: cover;
+
+}
+
+
+
+.texto__padrao{
+    font-family: "Montserrat";
+    font-weight: bolder;
+    font-style: italic;
+    width: 50%;
+    padding: 3em 2em 2em 1em;
+}
