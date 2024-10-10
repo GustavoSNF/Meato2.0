@@ -118,13 +118,12 @@ header {
 }
 
 .secao2__campo_pesquisa{
-    padding: 1em;
+    padding: 1.2em;
     width: 80vw;
     background-color: #F5F5F5;
     border: 1px solid rgba(0, 0, 0, 0.253);
     border-radius: 5px;
     font-family: "Baloo 2";
-
 }
 
 .botao__pesquisar{
@@ -143,7 +142,6 @@ header {
 .secao3__container{
     width: 90%;
     margin: auto;
-   /* Apagar posteriormente */  height: 100vh;
    background-color: white;
     
 }
@@ -159,7 +157,6 @@ header {
 }
 
 
-
 .secao3__lista__itens{
     background-color: #F5F5F5;
     padding: 1em;
@@ -173,7 +170,65 @@ header {
 
 .secao3__lista__links{
     color: rgba(0, 0, 0, 0.521);
-    font-family: "Montserrat";
-    
+    font-family: "Montserrat";   
 }
 
+.secao3__lista__itens:hover{
+    background-color: #ffc30f;
+}
+
+
+.secao4__container{
+    /* Apagar posteriormente */  height: 100vh;
+    padding: 1em;
+    width: 90vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card__padrao{
+    background-color:#ffc20f;
+    height: 150px;
+    padding: 1em;
+    width: 37%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2em;
+    border-radius: 1.5em;
+}
+
+.card__padrao > h2 {
+    font-family:  "Montserrat";
+    color: white;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.secao4__card__imagem{
+    width: 60px;
+    padding-bottom: 0.5em;
+}
+
+.secao4__card__link{
+    color: white;
+    background-color: rgba(255, 255, 255, 0.322);
+    padding: 0.5em 0.5em;
+    border-radius: 10px;
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.secao4__card__link:hover{
+    background-color: rgba(255, 255, 255, 0.548);
+}
+
+
+.secao4__card1{
+    background-color: rgba(245, 30, 30, 0.911);
+}
+
+.secao4__card2{
+    background-color: rgba(116, 192, 116, 0.952);
+}
