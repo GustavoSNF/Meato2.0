@@ -34,7 +34,7 @@ font-style: normal;
     text-decoration: none;
 }
 
-body{
+body, html{
     width: 100vw;
     box-sizing: border-box;
 }
@@ -188,7 +188,7 @@ header {
 .secao4__container__container{
     background-color: #e9e4e4;
     width: 100vw;
-    height: 40vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -251,14 +251,25 @@ header {
 }
 
 .secao4__container__carrosel{
-    width: 90%;
+    width: 99.2%;
     overflow: hidden;
     position: relative;
+    box-sizing: border-box;
 }
+
+.secao4__carrosel__titulo{
+    font-family: "Montserrat";
+    font-size: 1em;
+    text-align: center;
+    padding: 1em;
+    width: 100%;
+}
+
 
 .secao4__carrosel__lista{
     display: flex;
-    transition: transform 0.5s ease-in-out; 
+    transition: transform 0.5s ease-in-out;
+
 }
 
 
@@ -302,7 +313,7 @@ header {
 
 .prev, .next {
     position: absolute;
-    top: 50%;
+    top: 62%;
     transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.459);
     color: white;
@@ -320,11 +331,11 @@ header {
 }
 
 .prev {
-    left: 10px;
+    left: 5px;
 }
 
 .next {
-    right: 10px;
+    right: 5px;
 }
 
 
