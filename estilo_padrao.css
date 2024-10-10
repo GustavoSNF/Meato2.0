@@ -5,8 +5,6 @@
 
 
 
-
-
 .baloo-2 {
     font-family: "Baloo 2", sans-serif;
     font-optical-sizing: auto;
@@ -22,14 +20,16 @@
   }
 
 
-
-
-
 * {
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
+}
+
+body{
+    width: 100vw;
+    box-sizing: border-box;
 }
 
 
@@ -124,23 +124,27 @@ header {
     border: 1px solid rgba(0, 0, 0, 0.253);
     border-radius: 5px;
     font-family: "Baloo 2";
+
 }
 
 .botao__pesquisar{
     padding: 1em;
     width: 87vw;
     font-family: "Baloo 2";
-    font-weight: bold;
+    font-weight: 600;
     border: 1px solid rgba(0, 0, 0, 0.253);
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: #ffc30f;
     color: white;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.719);
+    font-size: 1em;
 }
 
 .secao3__container{
-    width: 80%;
+    width: 90%;
     margin: auto;
+   /* Apagar posteriormente */  height: 100vh;
+   background-color: white;
     
 }
 
@@ -148,6 +152,9 @@ header {
     display: flex;
     flex-wrap: wrap;
     gap: 1em;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 1em;
 
 }
 
@@ -156,4 +163,17 @@ header {
 .secao3__lista__itens{
     background-color: #F5F5F5;
     padding: 1em;
+    border: 1px solid rgba(0, 0, 0, 0.11);
+    border-radius: 50px;
+    padding: 8px;
+    flex: 0 0 calc(20% - 30px);
+    margin-bottom: 10px;
+    box-sizing: border-box;   
 }
+
+.secao3__lista__links{
+    color: rgba(0, 0, 0, 0.521);
+    font-family: "Montserrat";
+    
+}
+
