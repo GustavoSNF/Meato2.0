@@ -56,15 +56,80 @@
                 <div class="card__padrao secao4__card1">
                     <h2>Restaurante</h2>
                     <img src="img/img__hamburguer__pq.png" alt="icone de Hamburguer" class="secao4__card__imagem">
-                    <p><a href="#" class="secao4__card__link">Ver opção > </a></p>
+                    <p><a href="#" class="secao4__card__link">Ver opções </a></p>
                 </div>
 
                 <div class="card__padrao secao4__card2">
                     <h2>Mercado</h2>
                     <img src="img/img__mercado__pq.png" alt="icone de mercado" class="secao4__card__imagem">
-                    <p><a href="#" class="secao4__card__link">Buscar lojas ></a></p>
+                    <p><a href="#" class="secao4__card__link">Buscar lojas</a></p>
                 </div>
             </section>
+
+            <section class="secao4__container__carrosel">
+                <ul class="secao4__carrosel__lista">
+                    <li class="secao4__carrosel__item">
+                        <div class="item__carrosel__esquerdo">
+                            <p><img src="https://toppng.com/uploads/thumbnail/mcdonalds-png-11554012794yorzcbrvgy.png" alt="logo da empresa" class="item__carrosel__logo"></p>
+                        </div>
+
+                        <div class="item__carrosel__direito">
+                            <p class="nome__marca">McDonalds</p>
+                            <p class="seguimento__marca">Lanches</p>
+                        </div>
+                    </li>
+
+                    <li class="secao4__carrosel__item">
+                        <div class="item__carrosel__esquerdo">
+                            <p><img src="https://www.what-franchise.com/images/made/images/uploads/companies/Burger-King_170_170.png" alt="logo da empresa" class="item__carrosel__logo"></p>
+                        </div>
+
+                        <div class="item__carrosel__direito">
+                            <p class="nome__marca">Burguer king</p>
+                            <p class="seguimento__marca">Lanches</p>
+                        </div>
+                    </li>
+
+                    <li class="secao4__carrosel__item">
+                        <div class="item__carrosel__esquerdo">
+                            <p><img src="https://mv2-production-hub.s3.amazonaws.com/uploads/company/logo/menu_4814512ee9715325dbd89e576245041e.png" alt="logo da empresa" class="item__carrosel__logo"></p>
+                        </div>
+
+                        <div class="item__carrosel__direito">
+                            <p class="nome__marca">Habib`s</p>
+                            <p class="seguimento__marca">Lanches</p>
+                        </div>
+                    </li>
+
+                    <li class="secao4__carrosel__item">
+                        <div class="item__carrosel__esquerdo">
+                            <p><img src="https://brandslogos.com/wp-content/uploads/thumbs/outback-steakhouse-logo.png" alt="logo da empresa" class="item__carrosel__logo"></p>
+                        </div>
+
+                        <div class="item__carrosel__direito">
+                            <p class="nome__marca">Outback</p>
+                            <p class="seguimento__marca">Comidas</p>
+                        </div>
+                    </li>
+
+                    <li class="secao4__carrosel__item">
+                        <div class="item__carrosel__esquerdo">
+                            <p><img src="https://upload.wikimedia.org/wikipedia/de/thumb/c/cb/Pizza_Hut_Logo.svg/180px-Pizza_Hut_Logo.svg.png" alt="logo da empresa" class="item__carrosel__logo"></p>
+                        </div>
+
+                        <div class="item__carrosel__direito">
+                            <p class="nome__marca">Pizza Hut</p>
+                            <p class="seguimento__marca">Lanches</p>
+                        </div>
+                    </li>
+
+                </ul>
+
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+
+            </section>
+
         </section>
 
             <section class="secao5__container">
@@ -76,21 +141,21 @@
                     <ul class="secao5__cards__lista">
                         <li class="secao5__cards__item">
                             <img src="img/loja__imagem.webp" alt="icone de loja" class="secao5__imagem">
-                            <p class="secao5__cards__texto">Escolha sua loja favorita</p>
+                            <p class="secao5__cards__texto">Escolha sua loja <strong class="secao5__cards__texto__especial">favorita</strong></p>
                         </li>
 
                         <li class="secao5__cards__item">
                             <img src="img/fastFood__imagem.png" alt="imagem de um hamburguer com batata e refrigerante" class="secao5__imagem">
-                            <p class="secao5__cards__texto">Selecione os produtos</p>
+                            <p class="secao5__cards__texto">Selecione os <strong class="secao5__cards__texto__especial">produtos</strong></p>
                         </li>
 
                         <li class="secao5__cards__item">
                             <img src="img/forma__pagamento__imagem.png" alt="imagem de carteira com notas e cartões saindo dela" class="secao5__imagem">
-                            <p class="secao5__cards__texto">Escolha como pagar</p>
+                            <p class="secao5__cards__texto">Escolha como <strong class="secao5__cards__texto__especial">pagar</strong></p>
                         </li> 
 
                         <li class="secao5__cards__item">
-                            <p class="secao5__cards__texto">E pronto!</p> 
+                            <p class="secao5__cards__texto secao5__cards__ultimo"><strong class="secao5__cards__texto__especial">E pronto!</strong></p> 
                             <p class="secao5__cards__texto">Agora é só aproveitar!</p>
                         </li>
                     </ul>
@@ -102,5 +167,58 @@
         </section>
 
     </main>
+
+    <script>
+        const carouselContainer = document.querySelector('.secao4__carrosel__lista');
+        const prevButton = document.querySelector('.prev');
+        const nextButton = document.querySelector('.next');
+        let currentIndex = 0;
+
+        const totalItems = carouselContainer.children.length;
+
+        function updateCarousel() {
+            const itemWidth = carouselContainer.children[0].offsetWidth + 20;
+            carouselContainer.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+        }
+
+        nextButton.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % totalItems;
+            updateCarousel();
+        });
+
+        prevButton.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+            updateCarousel();
+        });
+
+        let startX = 0;
+        let isDragging = false;
+
+        carouselContainer.addEventListener('touchstart', (e) => {
+            startX = e.touches[0].clientX;
+            isDragging = true;
+        });
+
+        carouselContainer.addEventListener('touchmove', (e) => {
+            if (!isDragging) return;
+            const moveX = e.touches[0].clientX - startX;
+
+            if (moveX > 50) {
+                currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+                updateCarousel();
+                isDragging = false;
+            } else if (moveX < -50) {
+                currentIndex = (currentIndex + 1) % totalItems;
+                updateCarousel();
+                isDragging = false;
+            }
+        });
+
+        carouselContainer.addEventListener('touchend', () => {
+            isDragging = false;
+        });
+    </script>
+
+
 </body>
 </html>

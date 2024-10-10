@@ -186,18 +186,21 @@ header {
 }
 
 .secao4__container__container{
-    background-color: orange;
+    background-color: #e9e4e4;
     width: 100vw;
-    height: 80vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em 0;
 }
 
 .secao4__container{
-    padding: 1em;
+    padding: 2em 1em;
     width: 85vw;
     display: flex;
     justify-content: space-around;
     margin: auto;
-    
 }
 
 .card__padrao{
@@ -247,12 +250,88 @@ header {
     background-color: rgba(116, 192, 116, 0.952);
 }
 
+.secao4__container__carrosel{
+    width: 90%;
+    overflow: hidden;
+    position: relative;
+}
+
+.secao4__carrosel__lista{
+    display: flex;
+    transition: transform 0.5s ease-in-out; 
+}
+
+
+.secao4__carrosel__item{
+    display: flex;
+    min-width: 150px;
+    margin: 10px;
+    gap: 0.7em;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.473);
+    width: 40%;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.item__carrosel__logo{
+    width: 40px;
+    border-radius: 100%;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.301);
+}
+
+.item__carrosel__esquerdo{
+    max-width: 80px;
+}
+
+.item__carrosel__direito{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.nome__marca{
+    font-family: "Montserrat";
+    font-size: 0.8em;
+}
+
+.seguimento__marca{
+    font-size: 0.6em;
+    font-family: "Montserrat";
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.459);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    z-index: 1;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.9); 
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
 
 .secao5__container{
-    height: 200vh;
     padding: 1em;
     width: 92.3vw;
-    background-color: lightcoral;
+    background-color: #F5F5F5;
 }
 
 .secao5__titulo{
@@ -289,13 +368,32 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #ffc30f8f;
+    border: 1px solid rgba(0, 0, 0, 0.11);
     border-radius: 1em 1em 1em 0;
+}
+
+.secao5__cards__item:hover{
+    background-color: #ffc30f56;
+    border: none;
+    transition: 0.8s;
 }
 
 .secao5__cards__texto{
     font-family: "Baloo 2";
+    font-weight: bold;
     font-size: 1.2em;
     padding-bottom: 1em;
-
 }
+
+.secao5__cards__texto__especial{
+    color: lightcoral;
+}
+
+.secao5__cards__ultimo{
+    padding: 2em;
+    width: 50vw;
+    height: 10vh;
+    text-align: center;
+}
+
+
