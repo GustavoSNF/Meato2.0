@@ -343,7 +343,7 @@ header {
     padding: 1em;
     width: 92.3vw;
     background-color: #F5F5F5;
-    height: 300vh;
+    height: 160vh;
 }
 
 .secao5__titulo{
@@ -401,7 +401,7 @@ header {
 }
 
 .secao5__cards__texto__especial{
-    color: lightcoral;
+    color: #ffc20f;
 }
 
 
@@ -413,3 +413,29 @@ header {
     padding-top: 10%;
 }
 
+.secao6__container__app{
+    height: 500vh;
+}
+
+.secao6__app__titulo{
+    padding: 1em;
+    font-family: "baloo 2";
+    text-align: center;
+    background-color: #F5F5F5;
+}
+
+.secao6__app__texto{
+    font-family: "Montserrat";
+    padding: 1.2em;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.secao6__app__gif{
+    width: 100vw;
+}
+
+.secao6__app__video{
+    width: 80vw;
+    border-radius: 1em;
+}
