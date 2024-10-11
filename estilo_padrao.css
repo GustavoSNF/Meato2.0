@@ -4,7 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
-
 .baloo-2 {
     font-family: "Baloo 2", sans-serif;
     font-optical-sizing: auto;
@@ -27,6 +26,20 @@ font-style: normal;
 
 
 
+:root{
+    --cor-principal: #ffc20f;
+    --cor-fundo: #F5F5F5;
+    --cor-branca: #ffffff;
+    --fonte--principal: "Montserrat";
+    --fonte--secundaria: "Baloo 2";
+    --cor--rodape: #333333;
+    --cor-card1: #f51e1ee8;
+    --cor-card2: #74c074f3;
+}
+
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -41,7 +54,7 @@ body, html{
 
 
 header {
-    background-color: #F5F5F5;
+    background-color: var(--cor-fundo);
     display:flex;
     padding: 20px;
     justify-content: space-between;   
@@ -73,7 +86,7 @@ header {
 
 .cabecalho__login{
     padding-right: 2em;
-    background-color: #ffc20f;
+    background-color: var(--cor-principal);
     padding: 0.5em;
     border-radius: 5px;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.479);
@@ -82,7 +95,7 @@ header {
 .link__login{
     padding: 0.5em;
     color: white;
-    font-family: "Baloo 2";
+    font-family: var(--fonte--secundaria);
     font-weight: bold;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
@@ -100,7 +113,7 @@ header {
 
 
 .texto__secao1{
-    font-family: "Baloo 2";
+    font-family: var(--fonte--secundaria);
     font-weight: bolder;
     font-size: 1.4em;
     font-style: italic;
@@ -109,7 +122,7 @@ header {
 }
 
 .subtexto__secao1{
-    font-family: "Baloo 2";
+    font-family: var(--fonte--secundaria);
     font-size: 0.9em;
     width: 50%;
     padding: 0 0 2em 1.5em;
@@ -127,20 +140,20 @@ header {
 .secao2__campo_pesquisa{
     padding: 1.2em;
     width: 80vw;
-    background-color: #F5F5F5;
+    background-color: var(--cor-fundo);
     border: 1px solid rgba(0, 0, 0, 0.253);
     border-radius: 5px;
-    font-family: "Baloo 2";
+    font-family: var(--fonte--secundaria);
 }
 
 .botao__pesquisar{
     padding: 1em;
     width: 87vw;
-    font-family: "Baloo 2";
+    font-family: var(--fonte--secundaria);
     font-weight: 600;
     border: 1px solid rgba(0, 0, 0, 0.253);
     border-radius: 10px;
-    background-color: #ffc30f;
+    background-color: var(--cor-principal);
     color: white;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.719);
     font-size: 1em;
@@ -149,7 +162,7 @@ header {
 .secao3__container{
     width: 90%;
     margin: auto;
-   background-color: white;
+   background-color: var(--cor-branca);
    height: 30vh;
     
 }
@@ -166,7 +179,7 @@ header {
 
 
 .secao3__lista__itens{
-    background-color: #F5F5F5;
+    background-color: var(--cor-fundo);
     padding: 1em;
     border: 1px solid rgba(0, 0, 0, 0.11);
     border-radius: 50px;
@@ -178,11 +191,11 @@ header {
 
 .secao3__lista__links{
     color: rgba(0, 0, 0, 0.521);
-    font-family: "Montserrat";   
+    font-family: var(--fonte--principal);   
 }
 
 .secao3__lista__itens:hover{
-    background-color: #ffc30f;
+    background-color:var(--cor-principal);
 }
 
 .secao4__container__container{
@@ -204,7 +217,7 @@ header {
 }
 
 .card__padrao{
-    background-color:#ffc20f;
+    background-color:var(--cor-principal);
     height: 150px;
     padding: 1em;
     width: 37%;
@@ -216,7 +229,7 @@ header {
 }
 
 .card__padrao > h2 {
-    font-family:  "Montserrat";
+    font-family:  var(--fonte--principal);
     color: white;
     font-weight: 500;
     font-size: 1em;
@@ -232,7 +245,7 @@ header {
     background-color: rgba(255, 255, 255, 0.322);
     padding: 0.5em 0.5em;
     border-radius: 10px;
-    font-family: "Montserrat";
+    font-family: var(--fonte--principal);
     font-weight: 400;
     font-size: 1em;
 }
@@ -243,11 +256,11 @@ header {
 
 
 .secao4__card1{
-    background-color: rgba(245, 30, 30, 0.911);
+    background-color: var(--cor-card1);
 }
 
 .secao4__card2{
-    background-color: rgba(116, 192, 116, 0.952);
+    background-color: var(--cor-card2);
 }
 
 .secao4__container__carrosel{
@@ -258,7 +271,7 @@ header {
 }
 
 .secao4__carrosel__titulo{
-    font-family: "Montserrat";
+    font-family: var(--fonte--principal);
     font-size: 1em;
     text-align: center;
     padding: 1em;
@@ -302,13 +315,13 @@ header {
 }
 
 .nome__marca{
-    font-family: "Montserrat";
+    font-family: var(--fonte--principal);
     font-size: 0.8em;
 }
 
 .seguimento__marca{
     font-size: 0.6em;
-    font-family: "Montserrat";
+    font-family: var(--fonte--principal);
 }
 
 .prev, .next {
@@ -342,22 +355,22 @@ header {
 .secao5__container{
     padding: 1em;
     width: 92.3vw;
-    background-color: #F5F5F5;
+    background-color: var(--cor-fundo);
     height: 160vh;
 }
 
 .secao5__titulo{
-    font-family: "Montserrat";
+    font-family: var(--fonte--principal);
     padding: 1em;
     text-align: center;
 }
 
 .nome__app{
-    color: #ffc20f;
+    color: var(--cor-principal);
 }
 
 .secao5__subtexto{
-    font-family: "Montserrat";
+    font-family: var(--fonte--principal);
     padding: 1em;
     text-align: center;
 }
@@ -395,13 +408,13 @@ header {
 }
 
 .secao5__cards__texto{
-    font-family: "Baloo 2";
+    font-family: var(--fonte--secundaria);
     font-weight: bold;
     font-size: 1.2em;
 }
 
 .secao5__cards__texto__especial{
-    color: #ffc20f;
+    color: var(--cor-principal);
 }
 
 
@@ -419,13 +432,13 @@ header {
 
 .secao6__app__titulo{
     padding: 1em;
-    font-family: "baloo 2";
+    font-family: var(--fonte--secundaria);
     text-align: center;
-    background-color: #F5F5F5;
+    background-color: var(--cor-fundo);
 }
 
 .secao6__app__texto{
-    font-family: "Montserrat";
+    font-family: var(--fonte--principal);
     padding: 1.2em;
     text-align: center;
     font-size: 1.5em;
@@ -441,37 +454,45 @@ header {
 }
 
 .rodape__container__meato{
-    background-color: #333333 ;
+    background-color: var(--cor--rodape) ;
 }
 
 .rodape__meato__marca{
-    font-family: "Montserrat";
-    color: #ffc30f;
+    font-family: var(--fonte--principal);
+    color: var(--cor-principal);
     padding: 2em 1em 1em 1em;
 }
 
 .rodape__meato__lista__links{
-    font-family: "Montserrat";
+    font-family: var(--fonte--principal);
     line-height: 4em;
     padding-left: 1em;
-    color: white;
+    color: var(--cor-branca);
+}
+
+.rodape__meato__lista__links:hover{
+    color: var(--cor-principal);
 }
 
 .rodape__legal__titulo{
-    font-family: "Montserrat";
+    font-family: var(--fonte--principal);
     color: #ffc30f;
     padding: 2em 1em 1em 1em;
 }
 
 .rodape__container__legal__links{
-    font-family: "Montserrat";
+    font-family: var(--fonte--principal);
     line-height: 4em;
     padding-left: 1em;
     color: white;
 }
 
+.rodape__container__legal__links:hover{
+    color: var(--cor-principal);
+}
+
 .rodape__do__desenvolvedor{
-    font-family: "Montserrat";
+    font-family: var(--fonte--principal);
     line-height: 4em;
     padding-left: 1em;
     color: white;
@@ -481,6 +502,6 @@ header {
 }
 
 .nome__desenvolvedor{
-    font-family: "Montserrat";
-    color: #ffc30f;
+    font-family: var(--fonte--principal);
+    color: var(--cor-principal);
 }
