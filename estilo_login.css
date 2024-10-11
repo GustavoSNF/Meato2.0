@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+@import url(estilo_padrao.css);
+
+.login__container{
+    height: 300vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.login__container__cima__voltar{
+    display: flex;
+    align-items: center;
+}
+
+.icone__voltar{
+    width: 50px;
+    padding: 1em 0;
+}
+
+.login__voltar__texto{
+    font-family: var(--fonte--principal);
+    font-size: 0.9em;
+}
+
+
+.login__container__lado__cima{
+    background-color: var(--cor-principal);
+}
+
+
+.login__container__lado__baixo{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+}
+
+.login__container__baixo__botao{
+    background-color: var(--cor-principal);
+    padding: 0.8em;
+    border-radius: 0.3em;
+    text-align: center;
+    font-family: var(--fonte--principal);
+}
