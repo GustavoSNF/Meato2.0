@@ -414,7 +414,7 @@ header {
 }
 
 .secao6__container__app{
-    height: 500vh;
+    height: 80vh;
 }
 
 .secao6__app__titulo{
@@ -438,4 +438,49 @@ header {
 .secao6__app__video{
     width: 80vw;
     border-radius: 1em;
+}
+
+.rodape__container__meato{
+    background-color: #333333 ;
+}
+
+.rodape__meato__marca{
+    font-family: "Montserrat";
+    color: #ffc30f;
+    padding: 2em 1em 1em 1em;
+}
+
+.rodape__meato__lista__links{
+    font-family: "Montserrat";
+    line-height: 4em;
+    padding-left: 1em;
+    color: white;
+}
+
+.rodape__legal__titulo{
+    font-family: "Montserrat";
+    color: #ffc30f;
+    padding: 2em 1em 1em 1em;
+}
+
+.rodape__container__legal__links{
+    font-family: "Montserrat";
+    line-height: 4em;
+    padding-left: 1em;
+    color: white;
+}
+
+.rodape__do__desenvolvedor{
+    font-family: "Montserrat";
+    line-height: 4em;
+    padding-left: 1em;
+    color: white;
+    text-align: center;
+    width: 80%;
+    padding: 2em 0 0 2.5em;
+}
+
+.nome__desenvolvedor{
+    font-family: "Montserrat";
+    color: #ffc30f;
 }
