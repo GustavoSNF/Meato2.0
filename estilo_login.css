@@ -2,8 +2,31 @@
 
 @import url(estilo_padrao.css);
 
+main{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+}
+
+
+main::before{
+    position: absolute;
+    content: '';
+    background-image: url(img/fundo__tela.jpg);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-variant-alternates: blur(10px);
+    z-index: -1;
+}
+
 .login__container{
-    height: 300vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -24,6 +47,8 @@
 .login__voltar__texto{
     font-family: var(--fonte--principal);
     font-size: 0.9em;
+    color: black;
+    font-weight: bold;
 }
 
 
@@ -39,9 +64,21 @@
 }
 
 .login__container__baixo__botao{
-    background-color: var(--cor-principal);
+    background-color: rgba(0, 0, 0, 0.815);
     padding: 0.8em;
     border-radius: 0.3em;
     text-align: center;
     font-family: var(--fonte--principal);
+    color: var(--cor-branca);
+}
+
+.logo__login{
+    width: 20px;
+}
+
+.login__container__baixo__botao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
