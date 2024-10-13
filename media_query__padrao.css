@@ -211,7 +211,7 @@
     }
 }
 
-@media screen and (min-height: 389px) {
+@media screen and (max-height: 389px) {
     .secao1__container{
         height: 80vh;
     }
