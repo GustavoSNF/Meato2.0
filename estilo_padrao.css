@@ -162,8 +162,8 @@ header {
 .secao3__container{
     width: 90%;
     margin: auto;
-   background-color: var(--cor-branca);
-   height: 30vh;
+    background-color: var(--cor-branca);
+    height: 30vh;
     
 }
 
@@ -361,7 +361,7 @@ header {
 
 .secao5__container{
     padding: 1em;
-    width: 95vw;
+    width: 92.3vw;
     background-color: var(--cor-fundo);
     height: 160vh;
 }

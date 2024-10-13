@@ -14,7 +14,7 @@
 
 
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1024px){
     .cabecalho__menu__logo{
         display: none;  
     }
@@ -209,6 +209,60 @@
     .rodape__container__meato{
         font-size: 1.3em;
     }
+}
 
+@media screen and (min-height: 389px) {
+    .secao1__container{
+        height: 80vh;
+    }
+
+    .texto__secao1{
+        padding: 2em 2em 0.5em 1.5em;  
+    }
+
+    .secao2__container{
+        padding-top: 1em;
+    }
+
+    .secao3__container{
+        padding-top: 2em;
+        height: 60vh;
+    }
+
+    .secao3__lista{
+        width: 90vw;
+    }
+
+    .secao4__container__container{
+        height: 200vh;
+    }
+
+    .secao4__container{
+        height: 10vh;
+    }
+
+    .secao5__container{
+        height: 300vh;
+    }
+
+    .secao5__titulo{
+        padding-top: 5em;
+    }
+
+    .secao5__cards__lista{
+        height: 150vh;
+    }
+
+    .secao5__cards__item{
+        height: 90vh;
+    }
+
+    .secao6__container__app{
+        height: 300vh;
+    }
+
+    .secao6__app__gif{
+        height: 150vh;
+    }
 
 }
