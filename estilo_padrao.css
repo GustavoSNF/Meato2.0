@@ -496,6 +496,20 @@ header {
     color: var(--cor-principal);
 }
 
+.rodape__duvidas__titulo{
+    font-family: var(--fonte--principal);
+    color: #ffc30f;
+    padding: 2em 1em 1em 1em;
+}
+
+.rodape__container__duvidas__texto{
+    font-family: var(--fonte--principal);
+    line-height: 4em;
+    padding-left: 1em;
+    color: white;
+}
+
+
 .rodape__do__desenvolvedor{
     font-family: var(--fonte--principal);
     line-height: 4em;

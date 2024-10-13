@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco | Meato</title>
+    <link rel="stylesheet" href="estilo_fale-conosco.css">
+    <link rel="shortcut icon" href="img/logo1_pq.jpg" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <section class="secao1__container__voltar">
+            <a href="index.html"> <img src="img/seta__voltar.png" alt="Voltar" class="icone__voltar"></a>
+            <p class="login__voltar__texto"> Ajuda com Pedido</p>
+        </section>
+
+        <section class="formulario__container">
+            <form class="formulario">
+                <p class="paragrafo__formulario">
+                    <label for="nome" class="formulario__texto">Nome: </label>
+                    <input type="text" id="nome" required class="formulario__texto caixa">
+                </p>
+                <p class="paragrafo__formulario">
+                    <label for="email" class="formulario__texto">E-mail: </label>
+                    <input type="email" id="email" required class="formulario__texto caixa">
+                </p>
+                <p class="paragrafo__formulario">
+                    <label for="telefone" class="formulario__texto">Telefone: </label>
+                    <input type="number" required placeholder="(xx) xxxxx-xxxx" class="formulario_texto caixa">
+                </p>
+                <p class="paragrafo__formulario">
+                    <label for="assunto" class="formulario__texto">Assunto: </label>
+                    <select id="assunto" class="caixa">
+                        <option class="formulario__texto caixa">Reclamação</option>
+                        <option class="formulario__texto caixa">Sugestão</option>
+                        <option selected class="formulario__texto caixa">Elogio</option>
+                    </select>
+                </p>
+                <p class="paragrafo__formulario">
+                    <textarea  id="mensagem" cols="30" rows="10" class="formulario__texto caixa">Insira o conteúdo da mensagem aqui!</textarea>
+                </p>
+                <p class="botoes">
+                    <input type="reset" value="Limpar" class="formulario__texto botao">
+                    <input type="submit" value="Enviar" class="formulario__texto botao">
+                </p>
+
+            </form>
+        </section>
+    </main>
+</body>
+</html>
