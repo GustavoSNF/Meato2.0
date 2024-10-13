@@ -128,6 +128,8 @@ header {
 
 
 .secao2__container{
+    width: 100vw;
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -359,7 +361,7 @@ header {
 
 .secao5__container{
     padding: 1em;
-    width: 92.3vw;
+    width: 95vw;
     background-color: var(--cor-fundo);
     height: 160vh;
 }

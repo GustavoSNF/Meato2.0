@@ -64,6 +64,7 @@ main::before{
     gap: 1.2em;
 }
 
+
 .login__container__baixo__botao{
     background-color: rgba(0, 0, 0, 0.815);
     padding: 0.8em;
@@ -71,6 +72,13 @@ main::before{
     text-align: center;
     font-family: var(--fonte--principal);
     color: var(--cor-branca);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login__container__baixo__botao:hover{
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .logo__login{

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meato</title>
     <link rel="stylesheet" href="estilo_padrao.css">
+    <link rel="stylesheet" href="media_query__padrao.css">
     <link rel="shortcut icon" href="img/logo1_pq.jpg" type="image/x-icon">
 </head>
 <body>
@@ -19,10 +20,15 @@
             </div>
         </section>
 
-        <div class="cabecalho__login">
-            <a href="login.html" class="link__login">Entrar</a>
-        </div>
-
+        <section class="cabecalho__menu__telas__maiores">
+            
+            <a href="#" class="menu__telas__maiores">Carrinho</a>
+            <a href="#" class="menu__telas__maiores">Favoritos</a>
+        
+            <div class="cabecalho__login">
+                <a href="login.html" class="link__login">Entrar</a>
+            </div>
+        </section>
     </header>
 
     <main>
@@ -38,33 +44,51 @@
 
         <section class="secao3__container">
             <ul class="secao3__lista">
-                <li class="secao3__lista__itens"><a href="#" class="secao3__lista__links">Bebidas</a></li>
-                <li class="secao3__lista__itens"><a href="#" class="secao3__lista__links">Carnes</a></li>
-                <li class="secao3__lista__itens"><a href="#" class="secao3__lista__links">Laticínios</a></li>
-                <li class="secao3__lista__itens"><a href="#" class="secao3__lista__links">Doces</a></li>
-                <li class="secao3__lista__itens"><a href="#" class="secao3__lista__links">Limpeza</a></li>
-                <li class="secao3__lista__itens"><a href="#" class="secao3__lista__links">Padaria</a></li>
-                <li class="secao3__lista__itens"><a href="#" class="secao3__lista__links">Cerveja</a></li>
-                <li class="secao3__lista__itens"><a href="#" class="secao3__lista__links">Higiene</a></li>
-                <li class="secao3__lista__itens"><a href="#" class="secao3__lista__links">Massas</a></li>
-                <li class="secao3__lista__itens"><a href="#" class="secao3__lista__links">Congelados</a></li>
-                <li class="secao3__lista__itens"><a href="#" class="secao3__lista__links">Feira</a></li>
+                <li class="secao3__lista__itens"><p class="secao3__lista__links">Bebidas</p></li>
+                <li class="secao3__lista__itens"><p class="secao3__lista__links">Carnes</p></li>
+                <li class="secao3__lista__itens"><p class="secao3__lista__links">Laticínios</p></li>
+                <li class="secao3__lista__itens"><p class="secao3__lista__links">Doces</p></li>
+                <li class="secao3__lista__itens"><p class="secao3__lista__links">Limpeza</p></li>
+                <li class="secao3__lista__itens"><p class="secao3__lista__links">Padaria</p></li>
+                <li class="secao3__lista__itens"><p class="secao3__lista__links">Cerveja</p></li>
+                <li class="secao3__lista__itens"><p class="secao3__lista__links">Higiene</p></li>
+                <li class="secao3__lista__itens"><p class="secao3__lista__links">Massas</p></li>
+                <li class="secao3__lista__itens"><p class="secao3__lista__links">Congelados</p></li>
+                <li class="secao3__lista__itens"><p class="secao3__lista__links">Feira</p></li>
             </ul>
         </section>
 
         <section class="secao4__container__container">
             <section class="secao4__container">
                 <div class="card__padrao secao4__card1">
-                    <h2>Restaurante</h2>
-                    <img src="img/img__hamburguer__pq.png" alt="icone de Hamburguer" class="secao4__card__imagem">
-                    <p><a href="#" class="secao4__card__link">Ver opções </a></p>
+                    <h2 class="secao4__card__titulo">Restaurante</h2>
+                    <img src="img/img__hamburguer__pq.png" alt="icone de Hamburguer" class="secao4__card__imagem card__padrao__lado__direito">
+                    <p class="card__padrao__lado__esquerdo"><a href="#" class="secao4__card__link">Ver opções </a></p>
                 </div>
 
                 <div class="card__padrao secao4__card2">
-                    <h2>Mercado</h2>
+                    <h2 class="secao4__card__titulo">Mercado</h2>
                     <img src="img/cesta__produtos.png" alt="icone de mercado" class="secao4__card__imagem card2__imagem">
                     <p><a href="#" class="secao4__card__link">Buscar lojas</a></p>
                 </div>
+
+                <!--Card para telas Maiores-->
+                <div class="card__padrao__telas__maiores secao4__card1">
+                    <div class="card__padrao__telas__maiores__esquerdo">
+                        <h2 class="secao4__card__titulo">Restaurante</h2>
+                        <p class="card__padrao__lado__esquerdo"><a href="#" class="secao4__card__link">Ver opções </a></p>
+                    </div>
+                    <div class="card__padrao__telas__maiores__direito"><img src="img/img__hamburguer__pq.png" alt="icone de Hamburguer" class="secao4__card__imagem card__padrao__lado__direito"></div>
+                </div>
+
+                <div class="card__padrao__telas__maiores secao4__card2">
+                    <div class="card__padrao__telas__maiores__esquerdo">
+                        <h2 class="secao4__card__titulo">Mercado</h2>
+                        <p><a href="#" class="secao4__card__link">Buscar lojas</a></p>
+                    </div>
+                    <div  class="card__padrao__telas__maiores__direito card__tela_maior__direita"><img src="img/cesta__produtos.png" alt="icone de mercado" class="secao4__card__imagem card2__imagem"></div>
+                </div>
+
             </section>
 
             <section class="secao4__container__carrosel">

@@ -1,0 +1,214 @@
+@charset "UTF-8";
+
+@import url(estilo_padrao.css);
+
+@media screen and (max-width: 768px){
+    .card__padrao__telas__maiores{
+        display: none;
+    }
+
+    .menu__telas__maiores{
+        display: none;
+    }
+}
+
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .cabecalho__menu__logo{
+        display: none;  
+    }
+
+    .cabecalho__menu__telas__maiores{
+        display: flex;
+        gap: 2em;
+        align-items: center;
+        font-size: 1.3em;
+    }
+
+    .cabecalho__login{
+        padding: 0.2em 1em;
+        border-radius: 10px;
+    }
+
+    .link__login{
+        padding: 1em;
+    }
+
+    .menu__telas__maiores{
+        font-family: var(--fonte--secundaria);
+    }
+
+    .secao1__container{
+        height: 50vh;
+    }
+
+    .texto__secao1{
+        font-size: 2em;
+        padding: 3em 2em 0.5em 1.5em;
+    }
+
+    .subtexto__secao1{
+        padding: 0 0 2em 2.3em;
+        font-size: 1.2em;
+    }
+
+    .secao2__container{
+        flex-direction: row;
+        justify-content: center;
+        padding-left: 2em;
+    }
+
+    .secao2__campo_pesquisa{
+        width: 50vw;
+    }
+
+    .botao__pesquisar{
+        width: 40vw;
+    }
+
+    .secao3__container{
+        width: 80vw;
+    }
+
+    .secao3__lista__links{
+        text-align: center;
+    }
+
+    .card__padrao{
+        display: none;
+    }
+
+    .card__padrao__telas__maiores{
+        height: 150px;
+        padding: 1em;
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1.2em;
+        border-radius: 20px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .card__padrao__telas__maiores:hover{
+        transform: scale(1.03);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+
+    .card__padrao__telas__maiores__esquerdo{
+        display: flex;
+        flex-direction: column;
+        gap: 5em;
+        font-family:  var(--fonte--principal);
+        color: rgb(255, 255, 255);
+        font-weight: 500;
+        font-size: 1em;
+    }
+
+    .card__padrao__telas__maiores__direito{
+        width: 15vw;
+    }
+
+    .secao4__card__imagem{
+        width: 130px;
+    }
+
+    .card2__imagem{
+        width: 150px;
+    }
+
+    .card__tela_maior__direita{
+        width: 17vw;
+    }
+
+    .secao4__container__container{
+        height: 80vh;
+    }
+
+    .secao4__carrosel__titulo{
+        font-size: 2em;
+        padding: 0 2em 1em 0;
+    }
+
+
+    .secao4__carrosel__item{
+        min-width: 185px;
+        padding: 1.5em;
+        gap: 1em;
+    }
+
+    .item__carrosel__logo{
+        width: 50px;
+    }
+
+    .nome__marca{
+        font-size: 1em;
+    }
+
+    .seguimento__marca{
+        font-size: 0.7em;
+    }
+
+    .secao5__container{
+        height: 150vh;
+
+    }
+
+    .secao5__titulo{
+        padding: 3em 0 ;
+        font-size: 1.8em;
+    }
+
+    .secao5__subtexto{
+        font-size: 1.5em;
+        padding: 2em 0 3em 0;
+    }
+
+    .secao5__cards__lista{
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .secao5__cards__item{
+        flex-basis: calc(50% - 1em);
+        height: 40vh;
+    }
+
+    .secao5__cards__texto{
+        font-size: 1.5em;
+
+    }
+
+    .secao5__imagem{
+        width: 50%;
+
+    }
+
+    .secao6__app__titulo{
+        font-size: 2em;
+        padding-bottom: 2em;
+    }
+
+    .secao6__app__gif{
+        height: 70vh;
+    }
+
+    .secao6__container__app{
+        height: 150vh;
+    }
+
+    .secao6__app__texto{
+        font-size: 2em;
+
+    }
+
+    .rodape__container__meato{
+        font-size: 1.3em;
+    }
+
+
+}
