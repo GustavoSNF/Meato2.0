@@ -194,6 +194,7 @@ header {
 
 .secao3__lista__itens:hover{
     background-color:var(--cor-principal);
+    transition: 0.5s;
 }
 
 .secao4__container__container{
@@ -226,9 +227,14 @@ header {
     align-items: center;
     gap: 1.2em;
     border-radius: 20px;
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.534);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.card__padrao:hover{
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
 
 .card__padrao > h2 {
     font-family:  var(--fonte--principal);
@@ -251,10 +257,6 @@ header {
     font-family: var(--fonte--principal);
     font-weight: 400;
     font-size: 1em;
-}
-
-.secao4__card__link:hover{
-    background-color: rgba(255, 255, 255, 0.548);
 }
 
 
