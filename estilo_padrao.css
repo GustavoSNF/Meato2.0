@@ -48,6 +48,7 @@ font-style: normal;
 body, html{
     width: 100vw;
     box-sizing: border-box;
+    background-color: var(--cor-fundo);
 }
 
 
@@ -59,6 +60,14 @@ header {
     align-items: center; 
 }
 
+
+.secao1e2__telas__maiores{
+    display: none;
+}
+
+.secao6__container__app__telas__maiores{
+    display:none;
+}
 
 
 .cabecalho__menu{
@@ -507,8 +516,45 @@ header {
 .rodape__container__duvidas__texto{
     font-family: var(--fonte--principal);
     line-height: 4em;
-    padding-left: 1em;
+    padding-left: 0em;
     color: white;
+}
+
+.rodape__container__duvidas__texto:hover{
+    color: var(--cor-principal);
+
+}
+
+
+.redes__socias__lista{
+    display: flex;
+}
+
+.rodape__redes__socias__titulo{
+    font-family: var(--fonte--principal);
+    color: #ffc30f;
+    padding: 2em 1em 1em 1em;
+}
+
+.rodape__legal__item{
+    font-family: var(--fonte--principal);
+    line-height: 4em;
+    padding-left: 1em;
+    color: white; 
+}
+
+.rodape__legal__item:hover{
+    color: var(--cor-principal);
+}
+
+.rodape__redes__sociais{
+    display: flex;
+    flex-direction: column;
+}
+
+.redes__socias__lista{
+    display: flex;
+    flex-direction: column;
 }
 
 

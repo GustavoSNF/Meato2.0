@@ -15,6 +15,12 @@
 
 
 @media screen and (min-width: 769px) and (max-width: 1024px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+
     .cabecalho__menu__logo{
         display: none;  
     }
@@ -26,9 +32,18 @@
         font-size: 1.3em;
     }
 
+    .secao1e2__telas__maiores{
+        display:none
+    }
+
+    .teste{
+        display: block;
+    }
+
     .cabecalho__login{
         padding: 0.2em 1em;
         border-radius: 10px;
+        box-sizing: border-box;
     }
 
     .link__login{
@@ -64,11 +79,12 @@
     }
 
     .botao__pesquisar{
-        width: 40vw;
+        width: 30vw;
     }
 
     .secao3__container{
-        width: 80vw;
+        width: 90vw;
+        background-color: var(--cor-fundo);
     }
 
     .secao3__lista__links{
@@ -195,6 +211,7 @@
 
     .secao6__app__gif{
         height: 70vh;
+        width: 99vw;
     }
 
     .secao6__container__app{
@@ -210,6 +227,273 @@
         font-size: 1.3em;
     }
 }
+
+
+@media screen and (min-width: 1024px){
+    
+    body{
+        overflow-x: hidden;
+    }
+
+    .cabecalho__menu{
+        height: 13vh;
+        padding: 0 2em;
+
+    }
+
+    .cabecalho__menu__logo{
+        display: none;  
+    }
+
+    .cabecalho__menu__telas__maiores{
+        display: flex;
+        gap: 2em;
+        align-items: center;
+        font-size: 1.3em;
+        padding: 0 2em;
+    }
+
+    .secao1e2__telas__maiores{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+
+    .secao1__container{
+        height: 85vh;
+        background-size: cover; 
+        background-repeat: no-repeat;
+        background-position: top center;
+        box-sizing: border-box;
+    }
+
+    .texto__secao1{
+        width: 80vw;
+        font-size: 2.2em;
+        padding-top: 2em;
+        text-align: center;
+        text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.603);
+        margin: auto;
+
+    }
+
+    .subtexto__secao1{
+        text-align: center;
+        width: 80vw;
+        font-size: 1.2em;
+        text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.651);
+        margin: auto;
+    }
+
+    .secao2__container{
+        flex-direction: row;
+        width: 90vw;
+        margin: auto;
+        padding-top: 2em;
+        justify-content: center;
+        
+    }
+
+    .secao2__campo_pesquisa{
+        width: 40vw;
+    }
+
+    .botao__pesquisar{
+        width: 15vw;
+    }
+
+    .secao3__container{
+        padding-top:2em ;
+        width: 60vw;
+        height: 70vh;
+        background-color: transparent;
+    }
+
+    .secao3__lista__itens{
+        text-align: center;
+        max-width: 110px;
+    }
+    
+    .teste{
+        display: none;
+    }
+
+    .card__padrao{
+        display: none;
+    }
+
+    .card__padrao__telas__maiores{
+        height: 200px;
+        padding: 1em;
+        width: 35%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1.2em;
+        border-radius: 20px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .card__padrao__telas__maiores:hover{
+        transform: scale(1.03);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+
+    .card__padrao__telas__maiores__esquerdo{
+        display: flex;
+        flex-direction: column;
+        gap: 5em;
+        font-family:  var(--fonte--principal);
+        color: rgb(255, 255, 255);
+        font-weight: 500;
+        font-size: 1em;
+    }
+
+    .card__padrao__telas__maiores__direito{
+        width: 15vw;
+    }
+
+     .secao4__container__container{
+        height: 100vh;
+        gap: 5em;
+    }
+
+    .secao4__container{
+        width: 80vw;
+        margin: auto;
+        justify-content: center;
+        gap: 3em;
+    }
+
+    .secao4__card__imagem{
+        width: 130px;
+    }
+
+    .card2__imagem{
+        width: 150px;
+    }
+
+    .card__tela_maior__direita{
+        width: 17vw;
+    }
+
+    .secao4__carrosel__titulo{
+        font-size: 2em;
+        padding: 0 2em 1em 0;
+    }
+
+
+    .secao4__carrosel__item{
+        min-width: 185px;
+        padding: 1.5em;
+        gap: 1em;
+    }
+
+    .item__carrosel__logo{
+        width: 50px;
+    }
+
+    .nome__marca{
+        font-size: 1em;
+    }
+
+    .seguimento__marca{
+        font-size: 0.7em;
+    }
+
+    .secao5__container{
+        width: 80vw;
+        height: 100vh;
+        margin: auto;
+        justify-content: center;
+    }
+
+    .secao5__titulo{
+        padding: 3em 0 ;
+        font-size: 1.8em;
+    }
+
+    .secao5__subtexto{
+        font-size: 1.5em;
+        padding: 2em 0 3em 0;
+    }
+
+    .secao5__cards__lista{
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+
+    .secao5__cards__item{
+        height: 50vh;
+        
+    }
+
+    .secao6__container__app{
+        display: none;
+    }
+
+    .secao6__container__app__telas__maiores{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 130vh;
+    }
+
+    .secao6__app__titulo{
+        font-size: 2em;
+        padding-bottom: 2em;
+    }
+
+    .secao6__app__gif{
+        height: 70vh;
+        width: 40vw;
+        border: 1px solid rgba(0, 0, 0, 0.555);
+        border-radius: 3em 3em 3em 0;
+    }
+
+    .secao6__container__app{
+        height: 100vh;
+    }
+
+    .secao6__app__texto{
+        font-size: 2em;
+    }
+
+    .rodape__container__container{
+        display: flex;
+        width: 80vw;
+        box-sizing: border-box;
+        padding: 3em;
+        justify-content: center;
+        margin: auto;
+        gap: 5em;   
+    }
+
+    .rodape__container__info{
+        text-align: center;
+    }
+
+    .rodape__container__legal{
+        text-align: center;
+    }
+
+    .rodape__container__duvidas{
+        text-align: center;
+    }
+
+    .redes__socias__lista{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+}
+
 
 @media screen and (max-height: 391px) {
     .secao1__container{
